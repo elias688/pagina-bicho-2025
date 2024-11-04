@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+#result {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#dado {
+    font-size: 4rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#dado.tirando {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.bienvenida {
+    color: #00ff00;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #00ff00; }
+    to { text-shadow: 0 0 20px #00ff00; }
+}
+
+.larva {
+    color: #555;
+}
